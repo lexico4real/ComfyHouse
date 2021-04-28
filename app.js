@@ -28,7 +28,9 @@ class Products {
     async getProducts() {
         try {
 
-            const response = await client.getEntries();
+            const response = await client.getEntries({
+                content_type: 'comfyHouseProducts'
+            });
             console.log(response);
 
 
