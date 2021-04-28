@@ -28,7 +28,7 @@ class Products {
     async getProducts() {
         try {
 
-            const response = await client.getEntries()
+            let response = await client.getEntries()
                 .console.log(response.items);
 
 
