@@ -28,8 +28,8 @@ class Products {
     async getProducts() {
         try {
 
-            let response = await client.getEntries()
-                .console.log(response.items);
+            const response = await client.getEntries();
+            console.log(response);
 
 
             let result = await fetch('products.json');
