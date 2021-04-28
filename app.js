@@ -27,6 +27,11 @@ let buttonsDOM = [];
 class Products {
     async getProducts() {
         try {
+
+            const response = await client.getEntries()
+                .console.log(response.items);
+
+
             let result = await fetch('products.json');
             let data = await result.json();
             let products = data.items;
