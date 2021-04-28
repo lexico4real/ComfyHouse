@@ -5,7 +5,7 @@ const client = contentful.createClient({
     accessToken: "Ld7LQgIa4r5c74gomzyF0m3u-QBgG3vc5r6bQbJNpow"
 });
 
-console.log(client);
+//console.log(client);
 //Variables
 const cartBtn = document.querySelector('.cart-btn');
 const closeCartBtn = document.querySelector('.close-cart');
@@ -28,15 +28,15 @@ class Products {
     async getProducts() {
         try {
 
-            const response = await client.getEntries({
+            let contentful = await client.getEntries({
                 content_type: 'comfyHouseProducts'
             });
-            console.log(response);
+
 
 
             let result = await fetch('products.json');
-            let data = await result.json();
-            let products = data.items;
+            //let data = await result.json();
+            let products = contentful.items;
             products = products.map(item => {
                 const { title, price } = item.fields;
                 const { id } = item.sys;
