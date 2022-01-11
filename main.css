@@ -352,6 +352,7 @@ body {
   padding-top:24px;
   opacity:0.3;
   font-size:13px;
+  color:  var(--primaryColor);;
   margin-bottom:0;
 }
 
