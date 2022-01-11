@@ -270,6 +270,7 @@ body {
 }
 
 .footer-dark h3 {
+  color:  var(--primaryColor);
   margin-top:0;
   margin-bottom:12px;
   font-weight:bold;
@@ -342,6 +343,7 @@ body {
 }
 
 .footer-dark .item.social > a:hover {
+  color:  var(--primaryColor);;
   opacity:0.9;
 }
 
@@ -352,7 +354,5 @@ body {
   font-size:13px;
   margin-bottom:0;
 }
-
-https://epicbootstrap.com/snippets/footer-dark
 
 /* --------------- End of Footer ---------------- */
